@@ -1,0 +1,1 @@
+# myoshidan.WallpaperChanger.Activities
