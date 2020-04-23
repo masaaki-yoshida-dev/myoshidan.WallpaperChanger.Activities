@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <TargetFrameworks>net461</TargetFrameworks>
 		<RootNamespace>myoshidan.WallpaperChanger</RootNamespace>
@@ -9,21 +9,23 @@
     <DocumentationFile>bin\$(Configuration)\myoshidan.WallpaperChanger.xml</DocumentationFile>
   </PropertyGroup>
 	<ItemGroup>
-		<Reference Include="System"/>
+		<Reference Include="System" />
 		
-		<Reference Include="System.Core"/>
-		<Reference Include="System.Xml.Linq"/>
-		<Reference Include="System.Data.DataSetExtensions"/>
+		<Reference Include="System.Core" />
+		
+		<Reference Include="System.Windows.Forms" />
+		<Reference Include="System.Xml.Linq" />
+		<Reference Include="System.Data.DataSetExtensions" />
 		
 		
-		<Reference Include="Microsoft.CSharp"/>
+		<Reference Include="Microsoft.CSharp" />
  		
-		<Reference Include="System.Data"/>
-		<Reference Include="System.Xml"/>
-    <Reference Include="System.Net.Http"/>
-    <Reference Include="System.Windows"/>
-    <Reference Include="System.Xaml"/>
-    <Reference Include="WindowsBase"/>
+		<Reference Include="System.Data" />
+		<Reference Include="System.Xml" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
     <Compile Update="Properties\Resources.Designer.cs">
@@ -44,6 +46,5 @@
   <ItemGroup>
     <Folder Include="Contracts\" />
     <Folder Include="Enums\" />
-    <Folder Include="Models\" />
   </ItemGroup>
 </Project>
