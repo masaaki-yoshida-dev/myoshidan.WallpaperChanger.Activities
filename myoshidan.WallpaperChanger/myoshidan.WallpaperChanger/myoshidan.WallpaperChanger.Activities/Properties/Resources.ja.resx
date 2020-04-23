@@ -118,91 +118,91 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="ContinueOnError_Description" xml:space="preserve">
-    <value>If set, continue executing the remaining activities even if the current activity has failed.</value>
+    <value>現在のアクティビティが失敗したときに残りのアクティビティの実行を継続するかどうかを指定します。Boolean値（True、False）のみをサポートします。</value>
     <comment>property description</comment>
   </data>
   <data name="ContinueOnError_DisplayName" xml:space="preserve">
-    <value>ContinueOnError</value>
+    <value>エラー発生時に実行を継続</value>
     <comment>property name</comment>
   </data>
   <data name="Timeout_Description" xml:space="preserve">
-    <value>Specifies the amount of time (in milliseconds) to wait for the activity to run before an error is thrown. The default value is 60000 (1 minute).</value>
+    <value>アクティビティの実行が完了するまで待機する時間をミリ秒で指定します。</value>
     <comment>property description</comment>
   </data>
   <data name="Timeout_DisplayName" xml:space="preserve">
-    <value>Timeout (milliseconds)</value>
+    <value>タイムアウト (ミリ秒)</value>
     <comment>property name</comment>
   </data>
   <data name="Timeout_Error" xml:space="preserve">
-    <value>The activity timed out and was canceled.</value>
+    <value>アクティビティはタイムアウトし、キャンセルされました。</value>
     <comment>error message</comment>
   </data>
   <data name="Do" xml:space="preserve">
-    <value>Do</value>
+    <value>実行</value>
     <comment>generic</comment>
   </data>
   <data name="Common_Category" xml:space="preserve">
-    <value>Common</value>
+    <value>共通</value>
     <comment>category</comment>
   </data>
   <data name="Authentication_Category" xml:space="preserve">
-    <value>Authentication</value>
+    <value>認証</value>
     <comment>category</comment>
   </data>
   <data name="Input_Category" xml:space="preserve">
-    <value>Input</value>
+    <value>入力</value>
     <comment>category</comment>
   </data>
   <data name="Output_Category" xml:space="preserve">
-    <value>Output</value>
+    <value>出力</value>
     <comment>category</comment>
   </data>
   <data name="Options_Category" xml:space="preserve">
-    <value>Options</value>
+    <value>オプション</value>
     <comment>category</comment>
   </data>
   <data name="ValidationScope_Error" xml:space="preserve">
-    <value>Cannot be used outside of a {0}.</value>
+    <value>{0}の外では使用できません。</value>
     <comment>error message; {0} is a container activity (e.g. a scope)</comment>
   </data>
   <data name="ValidationValue_Error" xml:space="preserve">
-    <value>Please provide a value for {0}.</value>
+    <value>{0}の値を入力してください。</value>
     <comment>error message; {0} is the name of a missing property</comment>
   </data>
   <data name="ValidationExclusiveProperties_Error" xml:space="preserve">
-    <value>Please provide a value either for {0} or {1}, but not both.</value>
+    <value>{0}または{1}のどちらか一方の値を指定してください。両方を指定することはできません。</value>
     <comment>error message; {0} &amp; {1} are mutually exclusive activities</comment>
   </data>
   <data name="ValidationOverloadGroup_Error" xml:space="preserve">
-    <value>Please provide values for both {0} and {1}.</value>
+    <value>{0}と{1}両方に値を入力してください。</value>
     <comment>error message; {0} &amp; {1} are complementary properties</comment>
   </data>
   <data name="ChangeWallpaper_DisplayName" xml:space="preserve">
-    <value>Change Wallpaper</value>
+    <value>壁紙を変更する</value>
     <comment>activity name</comment>
   </data>
   <data name="ChangeWallpaper_Description" xml:space="preserve">
-    <value>Change the wallpaper with the specified image file.</value>
+    <value>壁紙画像ファイルを指定し、壁紙を変更します。</value>
     <comment>activity description</comment>
   </data>
   <data name="ChangeWallpaper_ImageFilePath_DisplayName" xml:space="preserve">
-    <value>ImageFilePath</value>
+    <value>壁紙画像ファイル</value>
     <comment>property name</comment>
   </data>
   <data name="ChangeWallpaper_ImageFilePath_Description" xml:space="preserve">
-    <value>Wallpaper image file</value>
+    <value>壁紙に設定する画像ファイル</value>
     <comment>property description</comment>
   </data>
   <data name="GenerateWallpaper_DisplayName" xml:space="preserve">
-    <value>Generate Wallpaper</value>
+    <value>壁紙を作成する</value>
     <comment>activity name</comment>
   </data>
   <data name="GenerateWallpaper_Description" xml:space="preserve">
-    <value>Create a wallpaper image file by specifying the background color and text.</value>
+    <value>背景色とテキストを指定し、壁紙画像ファイルを作成します。</value>
     <comment>activity description</comment>
   </data>
   <data name="GenerateWallpaper_BackGroundColor_DisplayName" xml:space="preserve">
-    <value>BackGroundColor</value>
+    <value>背景色</value>
     <comment>property name</comment>
   </data>
   <data name="GenerateWallpaper_BackGroundColor_Description" xml:space="preserve">
@@ -210,7 +210,7 @@
     <comment>property description</comment>
   </data>
   <data name="GenerateWallpaper_TextColor_DisplayName" xml:space="preserve">
-    <value>TextColor</value>
+    <value>テキスト色</value>
     <comment>property name</comment>
   </data>
   <data name="GenerateWallpaper_TextColor_Description" xml:space="preserve">
@@ -218,7 +218,7 @@
     <comment>property description</comment>
   </data>
   <data name="GenerateWallpaper_Text_DisplayName" xml:space="preserve">
-    <value>Text</value>
+    <value>テキスト</value>
     <comment>property name</comment>
   </data>
   <data name="GenerateWallpaper_Text_Description" xml:space="preserve">
@@ -226,7 +226,7 @@
     <comment>property description</comment>
   </data>
   <data name="GenerateWallpaper_FontSize_DisplayName" xml:space="preserve">
-    <value>FontSize</value>
+    <value>フォントサイズ</value>
     <comment>property name</comment>
   </data>
   <data name="GenerateWallpaper_FontSize_Description" xml:space="preserve">
@@ -234,7 +234,7 @@
     <comment>property description</comment>
   </data>
   <data name="GenerateWallpaper_FontName_DisplayName" xml:space="preserve">
-    <value>FontName</value>
+    <value>フォント名</value>
     <comment>property name</comment>
   </data>
   <data name="GenerateWallpaper_FontName_Description" xml:space="preserve">
@@ -242,7 +242,7 @@
     <comment>property description</comment>
   </data>
   <data name="GenerateWallpaper_OutputFilePath_DisplayName" xml:space="preserve">
-    <value>OutputFilePath</value>
+    <value>出力ファイルパス</value>
     <comment>property name</comment>
   </data>
   <data name="GenerateWallpaper_OutputFilePath_Description" xml:space="preserve">
@@ -250,15 +250,15 @@
     <comment>property description</comment>
   </data>
   <data name="GenerateWallpaperWithImageFile_DisplayName" xml:space="preserve">
-    <value>Generate Wallpaper With ImageFile</value>
+    <value>画像ファイルを使用して壁紙を作成する</value>
     <comment>activity name</comment>
   </data>
   <data name="GenerateWallpaperWithImageFile_Description" xml:space="preserve">
-    <value>Create a wallpaper image file by specifying the wallpaper image and text.</value>
+    <value>画像ファイルとテキストを指定し、壁紙画像ファイルを作成します。</value>
     <comment>activity description</comment>
   </data>
   <data name="GenerateWallpaperWithImageFile_ImageFilePath_DisplayName" xml:space="preserve">
-    <value>ImageFilePath</value>
+    <value>画像ファイルパス</value>
     <comment>property name</comment>
   </data>
   <data name="GenerateWallpaperWithImageFile_ImageFilePath_Description" xml:space="preserve">
@@ -266,7 +266,7 @@
     <comment>property description</comment>
   </data>
   <data name="GenerateWallpaperWithImageFile_Text_DisplayName" xml:space="preserve">
-    <value>Text</value>
+    <value>テキスト</value>
     <comment>property name</comment>
   </data>
   <data name="GenerateWallpaperWithImageFile_Text_Description" xml:space="preserve">
@@ -274,7 +274,7 @@
     <comment>property description</comment>
   </data>
   <data name="GenerateWallpaperWithImageFile_FontSize_DisplayName" xml:space="preserve">
-    <value>FontSize</value>
+    <value>フォントサイズ</value>
     <comment>property name</comment>
   </data>
   <data name="GenerateWallpaperWithImageFile_FontSize_Description" xml:space="preserve">
@@ -282,7 +282,7 @@
     <comment>property description</comment>
   </data>
   <data name="GenerateWallpaperWithImageFile_FontName_DisplayName" xml:space="preserve">
-    <value>FontName</value>
+    <value>フォント名</value>
     <comment>property name</comment>
   </data>
   <data name="GenerateWallpaperWithImageFile_FontName_Description" xml:space="preserve">
@@ -290,7 +290,7 @@
     <comment>property description</comment>
   </data>
   <data name="GenerateWallpaperWithImageFile_TextColor_DisplayName" xml:space="preserve">
-    <value>TextColor</value>
+    <value>テキスト色</value>
     <comment>property name</comment>
   </data>
   <data name="GenerateWallpaperWithImageFile_TextColor_Description" xml:space="preserve">
@@ -298,7 +298,7 @@
     <comment>property description</comment>
   </data>
   <data name="GenerateWallpaperWithImageFile_OutputFilePath_DisplayName" xml:space="preserve">
-    <value>OutputFilePath</value>
+    <value>壁紙出力ファイルパス</value>
     <comment>property name</comment>
   </data>
   <data name="GenerateWallpaperWithImageFile_OutputFilePath_Description" xml:space="preserve">
@@ -306,6 +306,6 @@
     <comment>property description</comment>
   </data>
   <data name="ValidationValueFullPath_Error" xml:space="preserve">
-    <value>Please input existing full path for {0}.</value>
+    <value>{0}には存在するフォルダを含むフルパスを設定してください。</value>
   </data>
 </root>
