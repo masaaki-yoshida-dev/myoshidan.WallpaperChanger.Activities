@@ -64,6 +64,11 @@ namespace myoshidan.WallpaperChanger.Activities
         [LocalizedCategory(nameof(Resources.Input_Category))]
         public InArgument<string> OutputFilePath { get; set; }
 
+        [LocalizedCategory(nameof(Resources.Output_Category))]
+        [LocalizedDisplayName(nameof(Resources.GenerateWallpaper_Result_DisplayName))]
+        [LocalizedDescription(nameof(Resources.GenerateWallpaper_Result_Description))]
+        public OutArgument<bool> Result { get; set; }
+
         #endregion
 
 
@@ -102,25 +107,23 @@ namespace myoshidan.WallpaperChanger.Activities
 
             // Outputs
             return (ctx) => {
+                Result.Set(ctx, task.Result);
             };
         }
 
-        private async Task ExecuteWithTimeout(AsyncCodeActivityContext context, CancellationToken cancellationToken = default)
+        private async Task<bool> ExecuteWithTimeout(AsyncCodeActivityContext context, CancellationToken cancellationToken = default)
         {
             var text = Text.Get(context);
             var fontsize = FontSize.Get(context);
             var fontname = FontName.Get(context);
             var outputfilepath = OutputFilePath.Get(context);
 
-            await Task.Run(() =>
-            {
-                new WallpaperGenerater().GenerateWallPaperFromSolidColor(BackGroundColor,
-                                                                         TextColor,
-                                                                         text,
-                                                                         fontsize,
-                                                                         fontname,
-                                                                         outputfilepath);
-            });
+            return await Task.FromResult(new WallpaperGenerater().GenerateWallPaperFromSolidColor(BackGroundColor,
+                                                                                                  TextColor,
+                                                                                                  text,
+                                                                                                  fontsize,
+                                                                                                  fontname,
+                                                                                                  outputfilepath));
         }
         #endregion
     }

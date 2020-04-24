@@ -27,7 +27,6 @@ namespace myoshidan.WallpaperChanger.Activities.Design
             builder.AddCustomAttributes(typeof(GenerateWallpaperWithImageFile), new DesignerAttribute(typeof(GenerateWallpaperWithImageFileDesigner)));
             builder.AddCustomAttributes(typeof(GenerateWallpaperWithImageFile), new HelpKeywordAttribute(""));
 
-
             MetadataStore.AddAttributeTable(builder.CreateTable());
         }
     }

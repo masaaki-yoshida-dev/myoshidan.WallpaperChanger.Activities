@@ -308,4 +308,22 @@
   <data name="ValidationValueFullPath_Error" xml:space="preserve">
     <value>{0}には存在するフォルダを含むフルパスを設定してください。</value>
   </data>
+  <data name="ChangeWallpaper_Result_Description" xml:space="preserve">
+    <value>成功した場合、Trueを返却します。失敗した場合Falseを返却します。</value>
+  </data>
+  <data name="ChangeWallpaper_Result_DisplayName" xml:space="preserve">
+    <value>結果</value>
+  </data>
+  <data name="GenerateWallpaperWithImageFile_Result_Description" xml:space="preserve">
+    <value>成功した場合、Trueを返却します。失敗した場合Falseを返却します。</value>
+  </data>
+  <data name="GenerateWallpaperWithImageFile_Result_DisplayName" xml:space="preserve">
+    <value>結果</value>
+  </data>
+  <data name="GenerateWallpaper_Result_Description" xml:space="preserve">
+    <value>成功した場合、Trueを返却します。失敗した場合Falseを返却します。</value>
+  </data>
+  <data name="GenerateWallpaper_Result_DisplayName" xml:space="preserve">
+    <value>結果</value>
+  </data>
 </root>

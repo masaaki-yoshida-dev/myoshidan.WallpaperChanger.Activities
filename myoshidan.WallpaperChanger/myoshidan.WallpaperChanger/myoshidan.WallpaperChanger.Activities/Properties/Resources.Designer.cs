@@ -106,6 +106,24 @@ namespace myoshidan.WallpaperChanger.Activities.Properties {
         }
         
         /// <summary>
+        ///   Returns true if successful. If it fails, false will be returned. に類似しているローカライズされた文字列を検索します。
+        /// </summary>
+        public static string ChangeWallpaper_Result_Description {
+            get {
+                return ResourceManager.GetString("ChangeWallpaper_Result_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Result に類似しているローカライズされた文字列を検索します。
+        /// </summary>
+        public static string ChangeWallpaper_Result_DisplayName {
+            get {
+                return ResourceManager.GetString("ChangeWallpaper_Result_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Common に類似しているローカライズされた文字列を検索します。
         /// </summary>
         public static string Common_Category {
@@ -232,6 +250,24 @@ namespace myoshidan.WallpaperChanger.Activities.Properties {
         }
         
         /// <summary>
+        ///   Returns true if successful. If it fails, false will be returned. に類似しているローカライズされた文字列を検索します。
+        /// </summary>
+        public static string GenerateWallpaper_Result_Description {
+            get {
+                return ResourceManager.GetString("GenerateWallpaper_Result_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Result に類似しているローカライズされた文字列を検索します。
+        /// </summary>
+        public static string GenerateWallpaper_Result_DisplayName {
+            get {
+                return ResourceManager.GetString("GenerateWallpaper_Result_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///    に類似しているローカライズされた文字列を検索します。
         /// </summary>
         public static string GenerateWallpaper_Text_Description {
@@ -354,6 +390,24 @@ namespace myoshidan.WallpaperChanger.Activities.Properties {
         public static string GenerateWallpaperWithImageFile_OutputFilePath_DisplayName {
             get {
                 return ResourceManager.GetString("GenerateWallpaperWithImageFile_OutputFilePath_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Returns true if successful. If it fails, false will be returned. に類似しているローカライズされた文字列を検索します。
+        /// </summary>
+        public static string GenerateWallpaperWithImageFile_Result_Description {
+            get {
+                return ResourceManager.GetString("GenerateWallpaperWithImageFile_Result_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Result に類似しているローカライズされた文字列を検索します。
+        /// </summary>
+        public static string GenerateWallpaperWithImageFile_Result_DisplayName {
+            get {
+                return ResourceManager.GetString("GenerateWallpaperWithImageFile_Result_DisplayName", resourceCulture);
             }
         }
         

@@ -3,31 +3,31 @@
     <TargetFrameworks>net461</TargetFrameworks>
 		<RootNamespace>myoshidan.WallpaperChanger.Activities.Design</RootNamespace>
 		<AssemblyName>myoshidan.WallpaperChanger.Activities.Design</AssemblyName>
-    <PackageId>myoshidan.WallpaperChanger.Activities</PackageId>
+    <PackageId>WallpaperChanger.Activities</PackageId>
   </PropertyGroup>
   <!-- Package Metadata -->
   <PropertyGroup>
-    <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+    <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
     <PackageLicenseExpression>Apache-2.0</PackageLicenseExpression>
     <Description>This package provides a function to create a wallpaper and to change a wallpaper.You can also express the progress of the workflow without disturbing the screen with popups.</Description>
     <Authors>myoshidan</Authors>
     <Company>myoshidan</Company>
-    <Copyright>@ 2020 myoshidan</Copyright>
+    <Copyright></Copyright>
     <PackageTags>UiPath Activit𝗒 Walllpaper Progress</PackageTags>
     <PackageProjectUrl>https://github.com/masaaki-yoshida-dev/UiPathWallPaper</PackageProjectUrl>
     <PackageIconUrl></PackageIconUrl>
     <PackageIcon>packageIcon.png</PackageIcon>
-    <AssemblyVersion>1.0.0.0</AssemblyVersion>
-    <FileVersion>1.0.0.0</FileVersion>
+    <AssemblyVersion>1.0.1.0</AssemblyVersion>
+    <FileVersion>1.0.1.0</FileVersion>
     <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
     <TargetsForTfmSpecificBuildOutput>$(TargetsForTfmSpecificBuildOutput);CopyProjectReferencesToPackage</TargetsForTfmSpecificBuildOutput>
   </PropertyGroup>
   <!-- Package Versions -->
   <PropertyGroup Condition="'$(Configuration)' == 'Debug'">
-    <PackageVersion>1.0.0.$([System.DateTime]::UtcNow.ToString(MMddHmmss))</PackageVersion>
+    <PackageVersion>1.0.1.$([System.DateTime]::UtcNow.ToString(MMddHmmss))</PackageVersion>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)' == 'Release'">
-    <PackageVersion>1.0.0</PackageVersion>
+    <PackageVersion>1.0.1</PackageVersion>
   </PropertyGroup>
   <ItemGroup>
     <None Remove="Designers\ChangeWallpaperDesigner.xaml" />
@@ -55,8 +55,9 @@
   <PropertyGroup>
     <OutputPath>bin\$(Configuration)\</OutputPath>
     <DocumentationFile>bin\$(Configuration)\myoshidan.WallpaperChanger.Activities.Design.xml</DocumentationFile>
-    <Product>myoshidan.WallpaperChanger.Activities</Product>
+    <Product>WallpaperChanger.Activities</Product>
     <RepositoryUrl>https://github.com/masaaki-yoshida-dev/UiPathWallPaper</RepositoryUrl>
+    <Version>1.0.1</Version>
   </PropertyGroup>
 	<ItemGroup>
 		<Reference Include="System" />

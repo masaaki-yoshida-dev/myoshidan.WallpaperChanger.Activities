@@ -27,16 +27,24 @@ namespace myoshidan.WallpaperChanger.Models
         /// SetWallPaper
         /// </summary>
         /// <param name="filePath"></param>
-        public void SetWallPaper(string filePath)
+        public bool SetWallPaper(string filePath)
         {
-            using (var regKeyDesktop = Registry.CurrentUser.OpenSubKey(@"Control Panel\Desktop", true))
+            try
             {
-                //中央に表示
-                regKeyDesktop.SetValue("TileWallpaper", "0");
-                regKeyDesktop.SetValue("WallpaperStyle", "0");
-            }
+                using (var regKeyDesktop = Registry.CurrentUser.OpenSubKey(@"Control Panel\Desktop", true))
+                {
+                    //中央に表示
+                    regKeyDesktop.SetValue("TileWallpaper", "0");
+                    regKeyDesktop.SetValue("WallpaperStyle", "0");
+                }
 
-            SystemParametersInfo(0x0014, 0, filePath, 0);
+                SystemParametersInfo(0x0014, 0, filePath, 0);
+                return true;
+            }
+            catch (Exception)
+            {
+                return false;
+            }
         }
         #endregion
 

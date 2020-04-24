@@ -33,6 +33,11 @@ namespace myoshidan.WallpaperChanger.Activities
         [LocalizedCategory(nameof(Resources.Input_Category))]
         public InArgument<string> ImageFilePath { get; set; }
 
+        [LocalizedCategory(nameof(Resources.Output_Category))]
+        [LocalizedDisplayName(nameof(Resources.ChangeWallpaper_Result_DisplayName))]
+        [LocalizedDescription(nameof(Resources.ChangeWallpaper_Result_Description))]
+        public OutArgument<bool> Result { get; set; }
+
         #endregion
 
 
@@ -74,17 +79,14 @@ namespace myoshidan.WallpaperChanger.Activities
 
             // Outputs
             return (ctx) => {
+                Result.Set(ctx, task.Result);
             };
         }
 
-        private async Task ExecuteWithTimeout(AsyncCodeActivityContext context, CancellationToken cancellationToken = default)
+        private async Task<bool> ExecuteWithTimeout(AsyncCodeActivityContext context, CancellationToken cancellationToken = default)
         {
             var imageFilePath = ImageFilePath.Get(context);
-            await Task.Run(() =>
-            {
-                new Models.WallpaperChanger().SetWallPaper(imageFilePath);
-                return;
-            });
+            return await Task.FromResult(new Models.WallpaperChanger().SetWallPaper(imageFilePath));            
         }
 
         #endregion
