@@ -12,11 +12,11 @@
     <Description>This package provides a function to create a wallpaper and to change a wallpaper.You can also express the progress of the workflow without disturbing the screen with popups.</Description>
     <Authors>Masaaki Yoshida</Authors>
     <Company>Masaaki Yoshida</Company>
-    <Copyright></Copyright>
+    <Copyright>© 2021 Masaaki Yoshida</Copyright>
     <PackageTags>UiPath Activit𝗒 Walllpaper Progress</PackageTags>
     <PackageProjectUrl>https://github.com/masaaki-yoshida-dev/UiPathWallPaper</PackageProjectUrl>
-    <PackageIconUrl></PackageIconUrl>
-    <PackageIcon>packageIcon.png</PackageIcon>
+    <PackageIconUrl>https://raw.githubusercontent.com/myoshidan/WallpaperChanger.Activities/master/WallpaperChanger/Resorces/packageIcon.png</PackageIconUrl>
+    <!--<PackageIcon>packageIcon.png</PackageIcon>-->
     <AssemblyVersion>1.0.2.0</AssemblyVersion>
     <FileVersion>1.0.2.0</FileVersion>
     <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
